@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+nav,
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-color: #262626;
+}
+#big_screen {
+  background-color: #fff;
+}
+
+._container {
+  padding: 2rem 2rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+._container > h1 {
+  font-size: 50px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+._container > p {
+  line-height: 30px;
+  font-weight: 300;
+}
+
+._container ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  margin-top: 4rem;
+}
+._container ul > li {
+  height: 150px;
+  cursor: pointer;
+}
+._container ul > li.red {
+  background-color: red;
+}
+._container ul > li.blue {
+  background-color: #0070c0;
+}
+._container ul > li.white {
+  background-color: #fff;
+}
+._container ul > li.black {
+  background-color: #000;
+}
+._container ul > li.green {
+  background-color: #06b050;
+}
+
+._container .button_wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+._container .button_wrapper button {
+  background-color: #4472c4;
+  border: none;
+  color: #fff;
+  outline: none;
+  height: 50px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  width: 200px;
+}
+
+._container .adsens {
+  background-color: #4472c4;
+  width: 100%;
+  height: 300px;
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+._container .adsens h1 {
+  font-weight: 300;
+  font-size: 20px;
+}
+@media screen and (max-width: 650px) {
+  ._container ul {
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+  ._container ul > li {
+    height: 100px;
+  }
+  ._container > h1 {
+    font-size: 30px;
+  }
+  ._container > p {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  ._container {
+    padding: 2rem 1rem;
+  }
+  ._container > h1 {
+    font-size: 20px;
+  }
+  ._container > p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+}
