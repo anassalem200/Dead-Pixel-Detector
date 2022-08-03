@@ -15,7 +15,11 @@ a {
 }
 
 body {
-  background-color: #262626;
+  background-color: rgb(229, 227, 227);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 #big_screen {
   background-color: #fff;
@@ -24,33 +28,46 @@ body {
 ._container {
   padding: 2rem 2rem;
   font-family: "Poppins", sans-serif;
-  color: #fff;
+  color: #333;
+  width: 800px;
+  height: 700px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 ._container > h1 {
   font-size: 50px;
   font-weight: 400;
   margin-bottom: 1rem;
+  text-align: center;
 }
 ._container > p {
   line-height: 30px;
   font-weight: 300;
+  text-align: center;
 }
 
 ._container ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 1rem;
   margin-top: 4rem;
+  width: 100%;
 }
 ._container ul > li {
-  height: 150px;
-  cursor: pointer;
+  height: 130px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 10px;
 }
 ._container ul > li.red {
-  background-color: red;
+  background-color: #ff0000;
 }
 ._container ul > li.blue {
-  background-color: #0070c0;
+  background-color: #0000ff;
 }
 ._container ul > li.white {
   background-color: #fff;
@@ -59,18 +76,27 @@ body {
   background-color: #000;
 }
 ._container ul > li.green {
-  background-color: #06b050;
+  background-color: #00ff00;
 }
 
 ._container .button_wrapper {
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-top: 5rem;
 }
+._container .button_wrapper p {
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
 ._container .button_wrapper button {
-  background-color: #4472c4;
-  border: none;
+  background: linear-gradient(to right, #9940f1, #752df9);
+  border-radius: 10px;
   color: #fff;
+  border: none;
+  cursor: pointer;
   outline: none;
   height: 50px;
   font-family: "Poppins", sans-serif;
@@ -91,6 +117,16 @@ body {
 ._container .adsens h1 {
   font-weight: 300;
   font-size: 20px;
+}
+@media screen and (max-width: 850px) {
+  body {
+    background-color: #fff;
+  }
+  ._container {
+    width: 100%;
+    height: unset;
+    border-radius: 0px;
+  }
 }
 @media screen and (max-width: 650px) {
   ._container ul {
