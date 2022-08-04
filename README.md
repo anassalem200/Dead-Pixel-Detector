@@ -1,6 +1,5 @@
 # Dead-Pixel-Detector
-###### Dead Pixel Detector is a single-page app hosted on **AWS Cloud serverless** technology, the app uses **S3 Static webhosting** to host the frontend,
-###### it multiple services using **CloudFront** as edge compute to reach out to users with minimal latency, **Lambda** function is used to wrap request with secure layer, and a **Route 53** Domain DNS for cloudfront to serve 
+###### Dead Pixel Detector is a single-page app hosted on **AWS Cloud serverless** technology, the app uses **S3 Static webhosting** to host the frontend, it multiple services using **CloudFront** as edge compute to reach out to users with minimal latency, **Lambda** function is used to wrap request with secure layer, and a **Route 53** Domain DNS for cloudfront to serve 
 
 # Architecture and Components
 - S3 Bucket
@@ -30,7 +29,7 @@ C:.
 │       index.js
 │
 └───Templates
-        LaunchACMCert.yaml.txt
+        LaunchACMCert.yaml
 ```
 
 - Misc/ for documentaion and images
