@@ -4,7 +4,7 @@
 #####
 #####
 #####
-### Visit Us on [www.deadpixeldetector.com](www.deadpixeldetector.com)
+### Visit Us on [www.deadpixeldetector.com](https://www.deadpixeldetector.com)
 #####
 #####
 #####
