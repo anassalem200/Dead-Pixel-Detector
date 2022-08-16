@@ -8,6 +8,7 @@
 #####
 #####
 #####
+
 # Architecture and Components
 - S3 Bucket
 - Lambda Function
