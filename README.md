@@ -17,6 +17,8 @@
 - Route53
 
 ![Source: AWS](Misc/cloudfront-secure-static-website-overview.png)
+*image is courtesy of AWS*
+
 
 # Folder Structure
 ```
